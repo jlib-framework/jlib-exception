@@ -35,8 +35,6 @@ public class ApplicationExceptionMessageTest
     private static class AnException
         extends ApplicationException {
 
-        private static final long serialVersionUID = 7554398632151450030L;
-
         private AnException(final Message message) {
             super(message);
         }

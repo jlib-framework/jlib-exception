@@ -27,15 +27,12 @@ public class InvalidArgumentExceptionMessageTest
     extends ExceptionMessageTestBase {
 
     @Override
-    protected void throwException()
-        throws Exception {
+    protected void throwException() {
         throw new AnException(getMessage());
     }
 
     private static class AnException
         extends InvalidArgumentException {
-
-        private static final long serialVersionUID = - 120847363819994480L;
 
         private AnException(final Message message) {
             super(message);

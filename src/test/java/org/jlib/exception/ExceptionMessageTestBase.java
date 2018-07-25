@@ -23,10 +23,11 @@ package org.jlib.exception;
 
 import org.jlib.message.EagerMessage;
 import org.jlib.message.Message;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -34,33 +35,31 @@ public abstract class ExceptionMessageTestBase {
 
     public static final String MESSAGE_TEXT = "A funny text.";
 
-    @Rule
-    public final ExpectedException expectedException = ExpectedException.none();
-
     private Message message;
 
     protected Message getMessage() {
         return message;
     }
 
-    protected ExpectedException getExpectedException() {
-        return expectedException;
-    }
-
-    @Before
+    @BeforeEach
     public void initializeMocks() {
         message = mock(EagerMessage.class);
     }
 
     @Test
-    public void exceptionShouldHaveCorrectMessage()
-        throws Exception {
-        when(message.toString()).thenReturn(MESSAGE_TEXT);
-        expectedException.expectMessage(MESSAGE_TEXT);
+    public void exceptionShouldHaveCorrectMessage() {
 
-        throwException();
+        when(message.toString())
+                .thenReturn(MESSAGE_TEXT);
+
+        Throwable thrown = catchThrowable(
+                this::throwException
+        );
+
+        assertThat(thrown)
+                .hasMessage(MESSAGE_TEXT);
     }
 
     protected abstract void throwException()
-        throws Exception;
+            throws Exception;
 }
