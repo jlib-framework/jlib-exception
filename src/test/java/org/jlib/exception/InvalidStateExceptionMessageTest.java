@@ -27,15 +27,12 @@ public class InvalidStateExceptionMessageTest
     extends ExceptionMessageTestBase {
 
     @Override
-    protected void throwException()
-        throws Exception {
+    protected void throwException() {
         throw new AnException(getMessage());
     }
 
     private static class AnException
         extends InvalidStateException {
-
-        private static final long serialVersionUID = - 3505364602724687463L;
 
         private AnException(final Message message) {
             super(message);
