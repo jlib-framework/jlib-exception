@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jlib-exception" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jlib-awslambda-logback_main" target="1.8" />
+      <module name="jlib-awslambda-logback_test" target="1.8" />
       <module name="jlib-exception" target="8" />
       <module name="jlib-exception_main" target="1.8" />
       <module name="jlib-exception_test" target="1.8" />

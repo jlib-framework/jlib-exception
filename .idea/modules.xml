@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jlib-exception.iml" filepath="$PROJECT_DIR$/jlib-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-exception.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-exception_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-exception_main.iml" group="jlib-exception" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-exception_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-exception_test.iml" group="jlib-exception" />
     </modules>
