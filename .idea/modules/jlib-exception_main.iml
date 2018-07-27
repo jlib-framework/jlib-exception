@@ -9,7 +9,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jlib:jlib-message:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jlib:jlib-value:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: org.jlib:jlib-message:1.0.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Could not find org.jlib:jlib-message:1.0.0.&#13;&#10;Searched in the following locations:&#13;&#10;  - https:/repo.maven.apache.org/maven2/org/jlib/jlib-message/1.0.0/jlib-message-1.0.0.pom&#13;&#10;  - https:/repo.maven.apache.org/maven2/org/jlib/jlib-message/1.0.0/jlib-message-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
