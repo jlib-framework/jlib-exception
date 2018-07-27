@@ -28,8 +28,6 @@ plugins {
     id 'net.researchgate.release' version '2.6.0'
 }
 
-version = '1.0.0-SNAPSHOT'
-
 description = 'jlib exception framework'
 ext.detailedDescription = 'jlib framework providing means to easily define new exceptions with expressive messages'
 
@@ -44,3 +42,4 @@ dependencies {
 
     testImplementation 'org.mockito:mockito-core:2.19.1'
 }
+
